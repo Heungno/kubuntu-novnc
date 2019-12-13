@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: xubuntu-novnc
 
 on: [push]
 
@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - uses: heungno/xubuntu-xvnc@v1
+    - name: heungno/xubuntu-xvnc
+      run: docker build . --file Dockerfile --tag heungno/xubuntu-xvnc:$(date +%s)
