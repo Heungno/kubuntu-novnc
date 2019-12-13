@@ -62,4 +62,4 @@ RUN echo "rm -rf /tmp/.X0-lock /tmp/.X11-unix\nsu -c \"vncserver $DISPLAY -geome
 
 EXPOSE $VNC_PORT $NO_VNC_PORT
 
-ENTRYPOINT  ["/bin/bash", "$VNC_DIR/start_vnc.sh"]
+ENTRYPOINT  ["/bin/bash", "/noVNC/start_vnc.sh"]
